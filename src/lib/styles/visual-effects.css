@@ -1,0 +1,5 @@
+.glass-bg {
+  background: var(--glass-background-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
