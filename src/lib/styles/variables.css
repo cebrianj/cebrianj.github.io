@@ -18,14 +18,23 @@
     --glass-background-color: rgba(255, 255, 255, 0.20);
 
 
-    --border-color: rgba(var(--color-primary), 0.5);
+    --border-color: rgba(255, 255, 255, 0.5);
     --border-radius: 30px;
 
-    --page-height: 100vh;
-    --navbar-height: 40px;
+    --navbar-height: 70px;
     --content-height: calc(var(--page-height) - var(--navbar-height));
 
-    --padding-big: 30px;
+    --content-max-width: 1200px;
+
+    --padding-big: 40px;
     --padding: 20px;
     --padding-small: 10px;
+
+    --sections-gap: 100px;
+
+    --section-padding: 30px;
+    --section-title-content-gap: 30px;
+    --section-inner-gap: 30px;
+    --sections-icons-gap: 20px;
+    --sections-icons-size: 2rem;
 }

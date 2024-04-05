@@ -12,11 +12,14 @@
 
 <style>
     .navbar {
+        z-index: 99;
+        top: 0;
+        position: sticky;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        height: var(--navbar-size);
+        height: var(--navbar-height);
         color: var(--color-primary);
         padding: var(--padding-small) var(--padding-big);
         flex-wrap: wrap;
@@ -28,7 +31,8 @@
     }
 
     .navbar * {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-family: "League Spartan";
     }
 
     .main-icon {
