@@ -69,6 +69,20 @@
             : AnimationDirection.LEFT_TO_RIGHT;
         currentSectionIdx = idx;
     }
+
+    function setPreviousSection() {
+        currentSectionIdx =
+            currentSectionIdx == 0
+                ? sectionsUniverse.length - 1
+                : currentSectionIdx - 1;
+    }
+
+    function setNextSection() {
+        currentSectionIdx =
+            currentSectionIdx == sectionsUniverse.length - 1
+                ? 0
+                : currentSectionIdx + 1;
+    }
 </script>
 
 <div class="buttons-container">
@@ -82,6 +96,8 @@
 </div>
 
 <div class="skills-container">
+    <button class="btn previous glass-bg" on:click={setPreviousSection}
+    ></button>
     <div class="card-container">
         {#key currentSection}
             <div
@@ -105,6 +121,7 @@
             </div>
         {/key}
     </div>
+    <button class="btn next glass-bg" on:click={setNextSection}></button>
 </div>
 
 <style>
@@ -121,23 +138,52 @@
         gap: var(--sections-icons-gap);
     }
 
+    .btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: var(--card-border-size) solid var(--border-color);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .next {
+        background-image: url("icons/icon-left-arrow.svg");
+    }
+
+    .previous {
+        background-image: url("icons/icon-left-arrow.svg");
+        transform: rotate(180deg);
+    }
+
     .skills-container {
-        /* display: flex; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         position: relative;
+        gap: var(--section-inner-gap);
     }
 
     .card-container {
-        display: block;
-        /* position: relative; */
+        flex-grow: 1;
+        position: relative;
     }
 
     .card {
         color: var(--color-primary);
-        position: absolute;
-        width: 100%;
+
         padding: 0;
         border-radius: 0;
         border-width: calc(var(--card-border-size) - var(--border-item-width));
+    }
+
+    /* Required to create flip effect in same position */
+    .card:nth-child(2) {
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 
     .items-container {
@@ -147,7 +193,7 @@
 
     .item {
         display: flex;
-        flex: 1 1 350px;
+        flex: 1 1 250px;
         flex-direction: column;
         align-items: center;
         gap: var(--sections-icons-gap);
