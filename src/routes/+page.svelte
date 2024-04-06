@@ -8,11 +8,11 @@
 
 <Navbar></Navbar>
 <div class="content">
-    <Section title="About" iconUrl="/user.svg">
+    <Section title="About" iconUrl="icons/icon-user.svg">
         <About></About>
     </Section>
 
-    <Section title="Skills" iconUrl="/icon-skills.svg" reverse="true">
+    <Section title="Skills" iconUrl="icons/icon-skills.svg" reverse="true">
         <Skills></Skills>
     </Section>
 </div>
