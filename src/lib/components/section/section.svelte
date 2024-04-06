@@ -33,6 +33,9 @@
 
     .content {
         padding: 0 var(--section-padding);
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-inner-gap);
     }
 
     .title-container.reverse {

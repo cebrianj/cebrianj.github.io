@@ -30,6 +30,10 @@
     --padding: 20px;
     --padding-small: 10px;
 
+    --card-border-size: 2px;
+    --card-padding-y: var(--padding);
+    --card-padding-x: var(--padding-big);
+
     --sections-gap: 100px;
 
     --section-padding: 30px;
