@@ -82,7 +82,6 @@
 </div>
 
 <div class="skills-container">
-    <!-- <button>before</button> -->
     <div class="card-container">
         {#key currentSection}
             <div
@@ -106,7 +105,6 @@
             </div>
         {/key}
     </div>
-    <!-- <button>after</button> -->
 </div>
 
 <style>
