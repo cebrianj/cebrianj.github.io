@@ -169,6 +169,8 @@
     .card-container {
         flex-grow: 1;
         position: relative;
+        /*  card size with 2 rows */
+        min-height: 252px;
     }
 
     .card {
