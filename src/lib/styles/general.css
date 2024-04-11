@@ -9,11 +9,11 @@
 body {
   min-height: 100vh;
   background:
-    url('bg.png') top center,
+    url('bg.png') top center scroll,
     radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
-  background-blend-mode: luminosity;
+    background-blend-mode: luminosity;
+    background-size: contain;
+    background-repeat: repeat-x;
 
-  background-size: auto auto;
-  background-repeat: round;
 
 }
