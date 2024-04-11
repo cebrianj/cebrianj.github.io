@@ -8,5 +8,12 @@
 
 body {
   min-height: 100vh;
-  background: radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
+  background:
+    url('bg.png') top center,
+    radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
+  background-blend-mode: luminosity;
+
+  background-size: auto auto;
+  background-repeat: round;
+
 }
