@@ -1,5 +1,6 @@
 <script>
     import About from "$lib/components/about/about.svelte";
+    import Experience from "$lib/components/experience/experience.svelte";
     import Navbar from "$lib/components/navbar/navbar.svelte";
     import Section from "$lib/components/section/section.svelte";
     import Skills from "$lib/components/skills/skills.svelte";
@@ -14,6 +15,10 @@
 
     <Section title="Skills" iconUrl="icons/icon-skills.svg" reverse="true">
         <Skills></Skills>
+    </Section>
+
+    <Section title="Experience" iconUrl="icons/icon-experience.png">
+        <Experience></Experience>
     </Section>
 </div>
 
