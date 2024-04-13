@@ -21,6 +21,21 @@
     flex-direction: column;
     gap: var(--section-title-content-gap);
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .section {
+      scale: 0.8;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry cover 30vh;
+    }
+    @keyframes fade-in {
+      100% {
+        scale: 1;
+      }
+    }
+  }
+
   .title-container {
     display: flex;
     justify-content: space-between;
