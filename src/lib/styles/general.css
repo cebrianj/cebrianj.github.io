@@ -6,14 +6,28 @@
   box-sizing: border-box;
 }
 
-body {
+body{
   min-height: 100vh;
   background:
-    url('bg.png') top center scroll,
-    radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
-    background-blend-mode: luminosity;
-    background-size: contain;
-    background-repeat: repeat-x;
-
-
+  url('bg.png') top center fixed,
+  radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
+  background-blend-mode: luminosity;
+  background-size: 100% ;
 }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  body{
+    animation: background-fade-out linear forwards;
+    animation-timeline: scroll();
+  }
+  @keyframes background-fade-out{
+    to{
+      background-size: 120%;
+    }
+  }
+}
+
+
+
+
