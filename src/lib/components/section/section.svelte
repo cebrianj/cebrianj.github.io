@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
   export let title = "";
+  export let sectionId: string = "";
   export let iconUrl = "";
   export let reverse = false;
 </script>
 
 <div class="section">
-  <div class="title-container" class:reverse>
+  <div class="title-container" class:reverse id={sectionId}>
     <div class="title">{title}</div>
     <div class="icon" style="background-image: url({iconUrl})"></div>
   </div>
