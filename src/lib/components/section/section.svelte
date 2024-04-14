@@ -20,15 +20,17 @@
   .section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: var(--section-title-content-gap);
+    min-height: calc(100lvh - var(--navbar-height));
   }
 
   @media (prefers-reduced-motion: no-preference) {
     .section {
-      scale: 0.8;
+      scale: 0.2;
       animation: fade-in linear forwards;
       animation-timeline: view();
-      animation-range: entry cover 30vh;
+      animation-range: entry 10% entry 80%;
     }
     @keyframes fade-in {
       100% {

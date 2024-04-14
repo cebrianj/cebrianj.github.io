@@ -60,9 +60,8 @@
   .content {
     display: flex;
     flex-direction: column;
-    gap: var(--sections-gap);
     max-width: var(--content-max-width);
     margin: auto;
-    padding: var(--padding-big) var(--padding-small);
+    padding: 0px var(--padding-small);
   }
 </style>
