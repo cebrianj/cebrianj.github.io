@@ -10,10 +10,14 @@
 
   function scrollToSection(event: any) {
     var section = document.getElementById(event.detail);
+    const sectionOffset = 150;
     if (section) {
-      section.scrollIntoView({
+      window.scrollTo({
         behavior: "smooth",
-        block: "center",
+        top:
+          section.getBoundingClientRect().top -
+          document.body.getBoundingClientRect().top -
+          sectionOffset,
       });
     }
   }
@@ -60,8 +64,9 @@
   .content {
     display: flex;
     flex-direction: column;
+    gap: var(--sections-gap);
     max-width: var(--content-max-width);
     margin: auto;
-    padding: 0px var(--padding-small);
+    padding: var(--padding-big) var(--padding-small);
   }
 </style>

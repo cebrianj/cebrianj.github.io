@@ -22,19 +22,35 @@
     flex-direction: column;
     justify-content: center;
     gap: var(--section-title-content-gap);
-    min-height: calc(100lvh - var(--navbar-height));
+    min-height: max(calc(70lvh - var(--navbar-height)), 500px);
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    .section {
+    .content {
       scale: 0.2;
       animation: fade-in linear forwards;
       animation-timeline: view();
-      animation-range: entry 10% entry 80%;
+      animation-range: entry entry 40vh;
     }
     @keyframes fade-in {
+      0% {
+        scale: 0.2;
+      }
       100% {
         scale: 1;
+      }
+    }
+
+    .title-container {
+      opacity: 0;
+      animation: opacity-fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry entry 40vh;
+    }
+
+    @keyframes opacity-fade-in {
+      100% {
+        opacity: 1;
       }
     }
   }
