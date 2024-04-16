@@ -6,7 +6,13 @@
   import Section from "$lib/components/section/section.svelte";
   import Skills from "$lib/components/skills/skills.svelte";
   import { SectionType } from "$lib/model/section-type";
+  import SectionTracker from "$lib/services/section-tracker";
   import "$lib/styles/_index";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    SectionTracker.startTracking();
+  });
 
   function scrollToSection(event: any) {
     var section = document.getElementById(event.detail);
@@ -67,6 +73,6 @@
     gap: var(--sections-gap);
     max-width: var(--content-max-width);
     margin: auto;
-    padding: var(--padding-big) var(--padding-small);
+    padding: 0px var(--padding-small);
   }
 </style>

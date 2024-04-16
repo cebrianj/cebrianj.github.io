@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     gap: var(--section-title-content-gap);
-    min-height: max(calc(70lvh - var(--navbar-height)), 500px);
+    min-height: max(calc(100lvh - var(--navbar-height)), 600px);
   }
 
   @media (prefers-reduced-motion: no-preference) {

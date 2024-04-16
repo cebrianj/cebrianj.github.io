@@ -1,13 +1,14 @@
 <script lang="ts">
   import { SectionType } from "$lib/model/section-type";
+  import SectionTracker from "$lib/services/section-tracker";
   import { createEventDispatcher } from "svelte";
 
   const eventDispatcher = createEventDispatcher();
   const sectionTypes = Object.values(SectionType);
-  $: currentTypeSection = SectionType.ABOUT;
+
+  let currentSectionType = SectionTracker.currentSectionType;
 
   function onSectionClick(section: SectionType) {
-    currentTypeSection = section;
     eventDispatcher("selectedSectionChange", section);
   }
 </script>
@@ -17,7 +18,7 @@
   <div class="buttons-container">
     {#each sectionTypes as sectionType}
       <button
-        class="button {sectionType === currentTypeSection
+        class="button {sectionType === $currentSectionType
           ? 'primary'
           : 'secondary'}"
         on:click={() => onSectionClick(sectionType)}
