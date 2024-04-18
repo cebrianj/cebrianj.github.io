@@ -23,6 +23,7 @@
     justify-content: center;
     gap: var(--section-title-content-gap);
     min-height: max(calc(100lvh - var(--navbar-height)), 600px);
+    padding: 20px 0px;
   }
 
   @media (prefers-reduced-motion: no-preference) {
