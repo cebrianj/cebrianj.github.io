@@ -86,7 +86,7 @@
   }
 </script>
 
-<div class="buttons-container">
+<div class="buttons-container small-stepper stepper-bg">
   {#each sectionsUniverse as section, idx}
     <button
       class="button {idx == currentSectionIdx ? 'primary' : 'secondary'}"
@@ -134,8 +134,10 @@
   }
   .buttons-container {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     gap: var(--sections-icons-gap);
+    position: relative;
   }
 
   .btn {

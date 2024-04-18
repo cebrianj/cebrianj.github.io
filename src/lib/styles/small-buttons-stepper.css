@@ -1,0 +1,38 @@
+@media (max-width: 992px) {
+  .small-stepper > button {
+    border: 2px solid var(--color-primary);
+    border-radius: 2rem;
+    z-index: 1;
+  }
+
+  .small-stepper > button.secondary {
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    color:transparent;
+    background: var(--glass-background-color);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .small-stepper.stepper-bg{
+    background-image: linear-gradient(transparent calc(50% - 1px), white 1px, white calc(100% - 1px), transparent calc(100% - 1px));
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* .small-stepper > :first-child::after {
+    content: "";
+    z-index: -1;
+    height: 2px;
+    width: 10px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  } */
+}

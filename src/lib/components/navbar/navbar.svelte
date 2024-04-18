@@ -15,7 +15,7 @@
 
 <div class="navbar glass-bg">
   <div class="main-icon"></div>
-  <div class="buttons-container">
+  <div class="buttons-container small-stepper">
     {#each sectionTypes as sectionType}
       <button
         class="button {sectionType === $currentSectionType
@@ -65,9 +65,11 @@
 
   .buttons-container {
     display: flex;
+    align-items: center;
+    position: relative;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 0.5rem;
-    width: 70%;
+    flex-grow: 1;
   }
 </style>
