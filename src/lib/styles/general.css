@@ -16,6 +16,12 @@ body{
 }
 
 
+@media (max-width:769px){
+  html{
+    font-size: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   body{
     animation: background-fade-out linear forwards;
