@@ -1,7 +1,10 @@
 <div class="card glass-bg">
   <p>Hello there!</p>
   <p class="me">I'm José Cebrián</p>
-  <p class="position">Software Developer Engineer & DevOps</p>
+  <div class="position dynamic-text">
+    <p><span class="arrow">></span> Developer</p>
+    <p><span class="arrow">></span> DevOps</p>
+  </div>
   <p class="description">
     My background in software development and DevOps allows me to tackle
     challenges and create robust, seamlessly integrated solutions. Driven by
@@ -37,14 +40,55 @@
     font-size: 1.5rem;
   }
 
-  .position {
-    font-size: 3rem;
-    text-align: left;
-    text-wrap: balance;
-  }
-
   .description {
     color: var(--color-primary-75-opacity);
+  }
+
+  .dynamic-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+    height: 2.5rem;
+  }
+
+  .dynamic-text > p .arrow {
+    font-size: 2.5rem;
+  }
+  .dynamic-text > p {
+    position: relative;
+    display: block;
+    border-right: 10px solid var(--color-primary);
+    max-width: fit-content;
+    min-width: 2ch;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:
+      typing 5s steps(36) infinite,
+      slide 10s steps(2) infinite;
+    top: 0;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -5rem;
+    }
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
   }
 
   .contact-container {
