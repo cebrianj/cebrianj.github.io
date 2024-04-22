@@ -72,14 +72,4 @@
     gap: 0.5rem;
     flex-grow: 1;
   }
-
-  /* @media (max-width: 577px) {
-    .buttons-container {
-      position: absolute;
-      width: 100%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  } */
 </style>
