@@ -54,7 +54,10 @@
         { name: "Linux", imageUrl: "icons/icon-linux.png" },
         { name: "Git", imageUrl: "icons/icon-git.png" },
         { name: "Selenium", imageUrl: "icons/icon-selenium.png" },
-        { name: "Scripting", imageUrl: "icons/icon-scripting.png" },
+        {
+          name: "Scripting (Bash, Powershell)",
+          imageUrl: "icons/icon-scripting.png",
+        },
         { name: "Graphql", imageUrl: "icons/icon-graphql.png" },
       ],
     },
@@ -136,16 +139,16 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: var(--sections-icons-gap);
+    gap: 1rem;
     position: relative;
   }
 
   .btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
+    flex: 0 0 3rem;
+    height: 3rem;
+    border-radius: 3rem;
     border: var(--card-border-size) solid var(--border-color);
-    background-size: 70%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -163,21 +166,20 @@
   .skills-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     gap: var(--section-inner-gap);
   }
 
   .card-container {
-    flex-grow: 1;
     position: relative;
     /*  card size with 2 rows */
     min-height: 252px;
+    flex: 1 0 70%;
   }
 
   .card {
     color: var(--color-primary);
-
     padding: 0;
     border-radius: 0;
     border-width: calc(var(--card-border-size) - var(--border-item-width));
@@ -197,7 +199,7 @@
 
   .item {
     display: flex;
-    flex: 1 1 250px;
+    flex: 1 1 14rem;
     flex-direction: column;
     align-items: center;
     gap: var(--sections-icons-gap);
