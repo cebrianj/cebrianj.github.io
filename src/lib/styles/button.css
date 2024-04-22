@@ -4,10 +4,12 @@
   border: 0;
   background-color: transparent;
   font-weight: 600;
+  transition: all 500ms;
 }
 
 .button:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .button.primary {
@@ -20,7 +22,14 @@
 
 .button.secondary {
   color: var(--color-primary);
+  border: 2px solid transparent;
+  transition: border 250ms linear;
 }
+
+.button.secondary:hover {
+  border: 2px solid var(--color-primary);
+}
+
 
 .button.tertiary {
   color: var(--color-primary);
