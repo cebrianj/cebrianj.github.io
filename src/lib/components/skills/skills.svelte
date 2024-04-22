@@ -199,7 +199,7 @@
 
   .item {
     display: flex;
-    flex: 1 1 14rem;
+    flex: 1 1 16rem;
     flex-direction: column;
     align-items: center;
     gap: var(--sections-icons-gap);
