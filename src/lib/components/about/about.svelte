@@ -2,7 +2,7 @@
   <p>Hello there!</p>
   <p class="me">I'm José Cebrián</p>
   <div class="position dynamic-text">
-    <p><span class="arrow">></span> Developer</p>
+    <p><span class="arrow">></span> SW Engineer</p>
     <p><span class="arrow">></span> DevOps</p>
   </div>
   <p class="description">
@@ -49,14 +49,22 @@
     margin-bottom: 1rem;
     overflow: hidden;
     position: relative;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
     text-align: left;
-    height: 2.5rem;
+    height: 3rem;
+  }
+
+  @media (max-width: 577px) {
+    .dynamic-text {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      height: 2.4rem;
+    }
   }
 
   .dynamic-text > p .arrow {
-    font-size: 2.5rem;
+    font-size: 1em;
   }
   .dynamic-text > p {
     position: relative;
@@ -68,14 +76,14 @@
     overflow: hidden;
     white-space: nowrap;
     animation:
-      typing 5s steps(36) infinite,
-      slide 10s steps(2) infinite;
+      typing 3s steps(36) infinite,
+      slide 6s steps(2) infinite;
     top: 0;
   }
 
   @keyframes slide {
     100% {
-      top: -5rem;
+      top: calc(0em - (2 * 1em));
     }
   }
 
