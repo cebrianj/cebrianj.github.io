@@ -17,9 +17,9 @@
 <div class="card glass-bg contact-container">
   <div class="contact">Contact me</div>
   <div class="icons-container">
-    <div class="icon linkedin"></div>
-    <div class="icon mail"></div>
-    <div class="icon github"></div>
+    <a class="icon linkedin" href="//linkedin.com/in/joseacebrian"></a>
+    <!-- <a class="icon mail"> -->
+    <a class="icon disabled github"> </a>
   </div>
 </div>
 
@@ -118,6 +118,10 @@
     width: var(--sections-icons-size);
     height: var(--sections-icons-size);
     background-size: contain;
+  }
+
+  .icon.disabled {
+    opacity: 0.5;
   }
 
   .icon.linkedin {
