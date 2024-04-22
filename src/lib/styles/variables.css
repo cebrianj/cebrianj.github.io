@@ -26,9 +26,9 @@
 
     --content-max-width: 1200px;
 
-    --padding-big: 40px;
-    --padding: 20px;
-    --padding-small: 10px;
+    --padding-big: 2rem; 
+    --padding: 1.25rem; 
+    --padding-small: 0.625rem; 
 
     --card-border-size: 2px;
     --card-padding-y: var(--padding);
@@ -36,7 +36,7 @@
 
     --sections-gap: 250px;
 
-    --section-padding: 30px;
+    --section-padding: 1.875rem;
     --section-title-content-gap: 30px;
     --section-inner-gap: 30px;
     --sections-icons-gap: 20px;

@@ -27,7 +27,7 @@
       </button>
     {/each}
   </div>
-  <button class="button tertiary">English</button>
+  <button class="button tertiary">ENG</button>
 </div>
 
 <style>
@@ -42,8 +42,8 @@
     height: var(--navbar-height);
     color: var(--color-primary);
     padding: var(--padding-small) var(--padding-big);
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    gap: 1rem;
 
     -webkit-box-shadow: 0px 3px 10px 0px var(--color-tertiary-50-opacity);
     -moz-box-shadow: 0px 3px 10px 0px var(--color-tertiary-50-opacity);
@@ -72,4 +72,14 @@
     gap: 0.5rem;
     flex-grow: 1;
   }
+
+  /* @media (max-width: 577px) {
+    .buttons-container {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  } */
 </style>
