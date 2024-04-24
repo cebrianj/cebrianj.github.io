@@ -9,31 +9,41 @@
 body{
   min-height: 100vh;
   background:
-  url('bg.png') top center fixed,
+  url('horizontal-bg.png') top center fixed no-repeat,
   radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
   background-blend-mode: luminosity;
-  background-size: 100% ;
 }
-
-
 @media (max-width:577px){
   html{
     font-size: 12px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  body{
-    animation: background-fade-out linear forwards;
-    animation-timeline: scroll();
+
+@media (max-width:1130px){
+  body {
+    animation: none;
+    background-size: cover !important;
+    background:
+      url('vertical-bg.png') top center fixed no-repeat,
+      radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
   }
-  @keyframes background-fade-out{
-    to{
-      background-size: 120%;
-    }
+
+  
+}
+
+@media (prefers-reduced-motion: no-preference ) {
+  body{
+    animation: horizontal-background-fade-out linear forwards;
+    animation-timeline: scroll();
   }
 }
 
-
-
-
+  @keyframes horizontal-background-fade-out{
+    from{
+      background-size: 100%;
+    }
+    to{
+      background-size: 120% ;
+    }
+  }
