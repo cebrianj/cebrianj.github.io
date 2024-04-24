@@ -6,11 +6,11 @@
     <p><span class="arrow">></span> DevOps</p>
   </div>
   <p class="description">
-    My background in software development and DevOps allows me to tackle
-    challenges and create robust, seamlessly integrated solutions. Driven by
-    curiosity and a passion for continuous learning, I evolve in environments
-    that foster innovation, constantly improving my skills to stay ahead in the
-    dynamic technology landscape.
+    My background in software engineer and DevOps allows me to tackle challenges
+    and create robust, seamlessly integrated solutions. Driven by curiosity and
+    a passion for continuous learning, I evolve in environments that foster
+    innovation, constantly improving my skills to stay ahead in the dynamic
+    technology landscape.
   </p>
 </div>
 
