@@ -1,5 +1,6 @@
 <script lang="ts">
   import About from "$lib/components/about/about.svelte";
+  import BackgroundAnimation from "$lib/components/background-animation/background-animation.svelte";
   import Experience from "$lib/components/experience/experience.svelte";
   import Navbar from "$lib/components/navbar/navbar.svelte";
   import Projects from "$lib/components/projects/projects.svelte";
@@ -51,6 +52,7 @@
   <Section
     title="Experience"
     iconUrl="icons/icon-experience.png"
+    activateBackgroundAnimation={false}
     sectionId={SectionType.EXPERIENCE}
   >
     <Experience></Experience>

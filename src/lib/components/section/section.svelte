@@ -1,11 +1,17 @@
 <script lang="ts">
+  import BackgroundAnimation from "../background-animation/background-animation.svelte";
+
   export let title = "";
   export let sectionId: string = "";
   export let iconUrl = "";
   export let reverse = false;
+  export let activateBackgroundAnimation = true;
 </script>
 
 <div class="section">
+  {#if activateBackgroundAnimation}
+    <BackgroundAnimation></BackgroundAnimation>
+  {/if}
   <div class="title-container" class:reverse id={sectionId}>
     <div class="title">{title}</div>
     <div class="icon" style="background-image: url({iconUrl})"></div>
@@ -18,6 +24,7 @@
 
 <style>
   .section {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
