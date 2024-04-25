@@ -75,6 +75,6 @@
     gap: var(--sections-gap);
     max-width: var(--content-max-width);
     margin: auto;
-    padding: 0px var(--padding-small);
+    padding: 0px var(--padding-small) var(--padding-small) var(--padding-small);
   }
 </style>
