@@ -155,11 +155,11 @@
   }
 
   .next {
-    background-image: url("icons/icon-left-arrow.svg");
+    background-image: url("/icons/icon-left-arrow.svg");
   }
 
   .previous {
-    background-image: url("icons/icon-left-arrow.svg");
+    background-image: url("/icons/icon-left-arrow.svg");
     transform: rotate(180deg);
   }
 

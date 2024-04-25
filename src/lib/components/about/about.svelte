@@ -125,10 +125,10 @@
   }
 
   .icon.linkedin {
-    background-image: url("icons/icon-linkedin.svg");
+    background-image: url("/icons/icon-linkedin.svg");
   }
 
   .icon.github {
-    background-image: url("icons/icon-github.svg");
+    background-image: url("/icons/icon-github.svg");
   }
 </style>
