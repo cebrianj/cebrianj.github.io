@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  overscroll-behavior: none;
+}
+
 body{
   min-height: 100vh;
   background: radial-gradient(at bottom, var(--color-secondary), var(--color-tertiary));
