@@ -55,7 +55,7 @@
         { name: "Git", imageUrl: "icons/icon-git.png" },
         { name: "Selenium", imageUrl: "icons/icon-selenium.png" },
         {
-          name: "Scripting (Bash, Powershell)",
+          name: "Bash & Ps1",
           imageUrl: "icons/icon-scripting.png",
         },
         { name: "Graphql", imageUrl: "icons/icon-graphql.png" },
@@ -205,7 +205,7 @@
 
   .item {
     display: flex;
-    flex: 1 1 16rem;
+    flex: 1 1 33%;
     flex-direction: column;
     align-items: center;
     gap: var(--sections-icons-gap);
