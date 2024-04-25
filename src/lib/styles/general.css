@@ -12,7 +12,10 @@ body{
   url('/horizontal-bg.png') top center fixed no-repeat,
   radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
   background-blend-mode: luminosity;
+  animation: horizontal-background-fade-out linear forwards;
+  animation-timeline: scroll();
 }
+
 @media (max-width:577px){
   html{
     font-size: 12px;
@@ -27,16 +30,7 @@ body{
     background:
       url('/vertical-bg.png') top center fixed no-repeat,
       radial-gradient(at top left, var(--color-secondary), var(--color-tertiary), var(--color-secondary));
-  }
-
-  
-}
-
-@media (prefers-reduced-motion: no-preference ) {
-  body{
-    animation: horizontal-background-fade-out linear forwards;
-    animation-timeline: scroll();
-  }
+  } 
 }
 
   @keyframes horizontal-background-fade-out{
