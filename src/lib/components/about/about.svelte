@@ -17,9 +17,8 @@
 <div class="card glass-bg contact-container">
   <div class="contact">Contact me</div>
   <div class="icons-container">
-    <a class="icon linkedin" href="//linkedin.com/in/joseacebrian"></a>
-    <!-- <a class="icon mail"> -->
-    <a class="icon disabled github"> </a>
+    <a class="icon linkedin" href="//linkedin.com/in/joseacebrian"> </a>
+    <a class="icon disabled github" href="/"> </a>
   </div>
 </div>
 
@@ -122,14 +121,13 @@
 
   .icon.disabled {
     opacity: 0.5;
+    pointer-events: none;
   }
 
   .icon.linkedin {
     background-image: url("icons/icon-linkedin.svg");
   }
-  .icon.mail {
-    background-image: url("icons/icon-mail.svg");
-  }
+
   .icon.github {
     background-image: url("icons/icon-github.svg");
   }
