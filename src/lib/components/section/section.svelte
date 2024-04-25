@@ -30,22 +30,7 @@
     justify-content: center;
     gap: var(--section-title-content-gap);
     min-height: max(calc(100lvh - var(--navbar-height)), 600px);
-    padding: 20px 0px;
-  }
-
-  .content {
-    scale: 0.2;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry entry 40vh;
-  }
-  @keyframes fade-in {
-    0% {
-      scale: 0.2;
-    }
-    100% {
-      scale: 1;
-    }
+    padding: 1.25rem 0px;
   }
 
   .title-container {
@@ -76,6 +61,25 @@
     display: flex;
     flex-direction: column;
     gap: var(--section-inner-gap);
+    scale: 0.2;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry entry 40vh;
+  }
+
+  @keyframes fade-in {
+    0% {
+      scale: 0.2;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+
+  @media (max-width: 577px) {
+    .content {
+      padding: 0 0;
+    }
   }
 
   .title-container.reverse {

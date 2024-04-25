@@ -85,6 +85,12 @@
     gap: var(--section-inner-gap);
   }
 
+  @media (max-width: 577px) {
+    .time-line {
+      margin: 0 calc(var(--ornament-size) / 2);
+    }
+  }
+
   .section {
     position: relative;
     padding: 0 var(--time-line-section-padding) 0

@@ -171,6 +171,12 @@
     gap: var(--section-inner-gap);
   }
 
+  @media (max-width: 577px) {
+    .skills-container {
+      gap: 10px;
+    }
+  }
+
   .card-container {
     position: relative;
     /*  card size with 2 rows */
