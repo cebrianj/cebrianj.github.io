@@ -171,17 +171,21 @@
     gap: var(--section-inner-gap);
   }
 
-  @media (max-width: 577px) {
-    .skills-container {
-      gap: 10px;
-    }
-  }
-
   .card-container {
     position: relative;
     /*  card size with 2 rows */
     min-height: 252px;
     flex: 1 0 70%;
+  }
+
+  @media (max-width: 577px) {
+    .skills-container {
+      gap: 10px;
+    }
+
+    .card-container {
+      min-height: 0;
+    }
   }
 
   .card {
