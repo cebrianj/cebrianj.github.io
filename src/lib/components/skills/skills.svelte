@@ -211,6 +211,7 @@
     gap: var(--sections-icons-gap);
     padding: var(--card-padding-y) var(--card-padding-x);
     border: var(--border-item-width) solid var(--border-color);
+    text-wrap: nowrap;
   }
 
   .icon {
