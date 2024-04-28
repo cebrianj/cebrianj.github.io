@@ -27,7 +27,6 @@
       </button>
     {/each}
   </div>
-  <button class="button tertiary">ENG</button>
 </div>
 
 <style>
