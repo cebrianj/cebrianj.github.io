@@ -27,8 +27,8 @@
     position: absolute;
     left: 30%;
     top: 30%;
-    width: 0.3vw;
-    height: 0.3vw;
+    width: 5px;
+    height: 5px;
     margin: 0 0 0 0;
     animation: ease 200s alternate infinite;
     pointer-events: none;
