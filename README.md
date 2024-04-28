@@ -1,38 +1,19 @@
-# create-svelte
+# 🌟 My Portfolio 🌟
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome to my GitHub repository! 🎉
 
-## Creating a project
+This is the place where I'll maintain my portfolio, showcasing the projects I've been working on, as well as updating my skills and professional experience.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🚀 Projects
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+In the projects section, you'll find a list of the projects I've been working on. Each project has its own folder with a brief description and relevant links.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## 💻 Skills
 
-## Developing
+The skills section will be kept up to date with the skills I've developed and the technologies I'm familiar with. This includes programming languages, frameworks, tools, and any other skills relevant to my professional field.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🏢 Professional Experience
 
-```bash
-npm run dev
+Here you'll find information about my professional experience, including details about previous companies, roles and responsibilities, as well as notable achievements.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Thanks for visiting my repository! 🙌
