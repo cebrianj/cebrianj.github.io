@@ -23,8 +23,6 @@
 
     --navbar-height: 70px;
     --content-height: calc(var(--page-height) - var(--navbar-height));
-    ---navbar-main-icon-width:  2.5rem;
-    ---navbar-main-icon-height: 2.188rem;
 
     --content-max-width: 1200px;
 

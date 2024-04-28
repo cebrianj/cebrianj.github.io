@@ -27,7 +27,6 @@
       </button>
     {/each}
   </div>
-  <div class="spacer"></div>
 </div>
 
 <style>
@@ -55,17 +54,12 @@
     font-family: "League Spartan";
   }
 
-  .navbar .spacer {
-    height: var(---navbar-main-icon-height);
-    width: var(---navbar-main-icon-width);
-  }
-
   .main-icon {
     background-image: url("/main-icon.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: var(---navbar-main-icon-height);
-    width: var(---navbar-main-icon-width);
+    height: 2.188rem;
+    width: 2.5rem;
   }
 
   .buttons-container {
