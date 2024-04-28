@@ -12,7 +12,14 @@ html{
 
 body{
   min-height: 100vh;
-  background: radial-gradient(at bottom, var(--color-secondary), var(--color-tertiary));
+    background-image: 
+      radial-gradient(circle at left top, var(--color-tertiary) 0%, var(--color-tertiary) 10%,transparent 10%, transparent 90%),
+      radial-gradient(circle at left bottom, var(--color-tertiary) 0%, var(--color-tertiary) 10%,transparent 10%, transparent 90%),
+      radial-gradient(circle at center right, var(--color-tertiary) 0%, var(--color-tertiary) 10%,transparent 10%, transparent 90%),
+      radial-gradient(circle 200px at 90% 10%, var(--color-tertiary) 0%, var(--color-tertiary) 50%,transparent 50%),
+      radial-gradient(circle 200px at 20% 32%, var(--color-tertiary) 0%, var(--color-tertiary) 50%,transparent 50%),
+      radial-gradient(circle 200px at 60% 80%, var(--color-tertiary) 0%, var(--color-tertiary) 50%,transparent 50%),
+      linear-gradient(90deg, #bd5724,#882f3e,#702f54,#34253d);  
 }
 
 @media (max-width:577px){
