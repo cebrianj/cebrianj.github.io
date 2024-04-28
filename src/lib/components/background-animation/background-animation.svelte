@@ -27,8 +27,8 @@
     position: absolute;
     left: 30%;
     top: 30%;
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     margin: 0 0 0 0;
     animation: ease 200s alternate infinite;
     pointer-events: none;
@@ -43,7 +43,7 @@
     transform-origin: -10vw;
   }
   .firefly::before {
-    background: black;
+    background: var(--color-tertiary);
     opacity: 0.4;
     animation: drift ease alternate infinite;
   }
