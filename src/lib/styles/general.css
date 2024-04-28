@@ -13,9 +13,6 @@ html{
 body{
   min-height: 100vh;
   background: radial-gradient(at bottom, var(--color-secondary), var(--color-tertiary));
-  background-blend-mode: luminosity;
-  animation: horizontal-background-fade-out linear forwards;
-  animation-timeline: scroll();
 }
 
 @media (max-width:577px){
