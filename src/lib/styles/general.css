@@ -19,7 +19,7 @@ body{
       radial-gradient(circle 200px at 90% 10%, var(--color-tertiary) 0%, var(--color-tertiary) 50%,transparent 50%),
       radial-gradient(circle 200px at 20% 32%, var(--color-tertiary) 0%, var(--color-tertiary) 50%,transparent 50%),
       radial-gradient(circle 200px at 60% 80%, var(--color-tertiary) 0%, var(--color-tertiary) 50%,transparent 50%),
-      linear-gradient(90deg, #bd5724,#882f3e,#702f54,#34253d);  
+      linear-gradient(90deg, var(--color-gradient-1),var(--color-gradient-2),var(--color-gradient-3),var(--color-gradient-4));  
 }
 
 @media (max-width:577px){

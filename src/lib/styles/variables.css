@@ -3,6 +3,10 @@
     --color-secondary: #d45d22;
     --color-tertiary: #2f2f2b;
 
+    --color-gradient-1: #bd5724;
+    --color-gradient-2: #882f3e;
+    --color-gradient-3: #702f54;
+    --color-gradient-4: #53395f;
 
     --color-primary-25-opacity: rgba(255, 255, 255, 0.25);
     --color-primary-50-opacity: rgba(255, 255, 255, 0.5);
