@@ -18,7 +18,7 @@
   <div class="contact">Contact me</div>
   <div class="icons-container">
     <a class="icon linkedin" href="//linkedin.com/in/joseacebrian"> </a>
-    <a class="icon disabled github" href="/"> </a>
+    <a class="icon github" href="//github.com/cebrianj"> </a>
   </div>
 </div>
 
