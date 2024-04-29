@@ -59,7 +59,7 @@
   </Section>
 
   <Section
-    title="Projects"
+    title="Projects (WIP) ⚠️"
     iconUrl="icons/icon-code.png"
     reverse="true"
     contentClass="blurred"
