@@ -62,6 +62,7 @@
     title="Projects"
     iconUrl="icons/icon-code.png"
     reverse="true"
+    contentClass="blurred"
     sectionId={SectionType.PROJECTS}
   >
     <Projects></Projects>

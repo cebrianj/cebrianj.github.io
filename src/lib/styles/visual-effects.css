@@ -3,3 +3,7 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+
+.blurred {
+  filter: blur(5px);
+}
