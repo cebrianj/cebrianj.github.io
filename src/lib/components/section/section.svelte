@@ -3,6 +3,7 @@
 
   export let title = "";
   export let sectionId: string = "";
+  export let contentClass: string = "";
   export let iconUrl = "";
   export let reverse = false;
   export let activateBackgroundAnimation = true;
@@ -17,7 +18,7 @@
     <div class="icon" style="background-image: url({iconUrl})"></div>
   </div>
 
-  <div class="content">
+  <div class="content {contentClass}">
     <slot />
   </div>
 </div>
