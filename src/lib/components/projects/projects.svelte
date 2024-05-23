@@ -23,7 +23,7 @@
     <p class="project-title">
       MINESWEEPER <a
         class="icon github"
-        href="//https://github.com/cebrianj/Minesweeper"
+        href="//github.com/cebrianj/Minesweeper"
       >
       </a>
     </p>
