@@ -33,12 +33,6 @@
       separation of game logic and visual display
     </p>
   </div>
-
-  <div class="card glass-bg project">
-    <div class="project-image skeleton"></div>
-    <p class="project-title skeleton"></p>
-    <p class="project-description skeleton"></p>
-  </div>
 </div>
 
 <style>
@@ -118,19 +112,5 @@
     font-family: "Istok Web";
     text-align: justify;
     color: var(--color-primary-75-opacity);
-  }
-
-  .skeleton {
-    -webkit-animation: skeleton-loading 1s linear infinite alternate;
-    animation: skeleton-loading 1s linear infinite alternate;
-  }
-
-  @keyframes skeleton-loading {
-    0% {
-      background-color: var(--color-primary-50-opacity);
-    }
-    100% {
-      background-color: var(--color-primary-25-opacity);
-    }
   }
 </style>
