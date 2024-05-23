@@ -47,7 +47,7 @@
   .project {
     flex: 1 1 350px;
     max-width: 350px;
-    height: 300px;
+    height: 21.875rem;
     overflow: hidden;
     transition: all 1s;
   }
@@ -85,7 +85,7 @@
     align-items: baseline;
     justify-content: space-between;
     width: 100%;
-    height: 1em;
+
     font-family: "League Spartan";
     font-size: 1.6rem;
     font-weight: 600;
@@ -93,8 +93,8 @@
   }
 
   .project-title .icon {
-    width: 0.9em;
-    height: 0.9em;
+    width: 25px;
+    height: 25px;
     display: inline-block;
     background-size: contain;
   }
@@ -104,11 +104,11 @@
   }
 
   .project-description {
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: center;
     width: 100%;
-    height: 3.3em;
-    font-size: 0.8rem;
+
+    font-size: 1rem;
     font-family: "Istok Web";
     text-align: justify;
     color: var(--color-primary-75-opacity);
